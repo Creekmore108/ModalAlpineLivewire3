@@ -17,6 +17,7 @@
        <x-modal  name="modal1" title="Modal 1">
             <x-slot:body>
                 <span class="p-5">Body number one</span>
+                {{-- <livewire:clicker> --}}
             </x-slot>
        </x-modal>
        <x-modal  name="modal2" title="Modal 2">
@@ -30,6 +31,8 @@
             <p>&nbsp;</p>
             <button x-data x-on:click="$dispatch('open-modal',{ name : 'modal2'})"
                     class="px-3 py-1 bg-blue-500 text-white rounded">Open Modal 2</button>
+            <p>&nbsp;</p>
+                <livewire:clicker />
        </div>
     </body>
 </html>
